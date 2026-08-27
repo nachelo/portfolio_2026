@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+
+    .site-header {
+        padding: 15px 20px;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+}
