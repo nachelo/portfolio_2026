@@ -25,27 +25,30 @@ const datosProyectos = [
         tecnologias: "HTML · CSS · JavaScript",
         herramientas: "VS Code · Git · Figma",
         estado: "En desarrollo",
-        url: "#"
+        url: "#",
+        abrir:true,
     },
     {
         numero: "Proyecto//002",
         titulo: "Code Gold Machine",
-        imagen: "assets/img/gold-machine.png",
-        descripcion: "Descripción de la Gold Machine",
-        tecnologias: "Python",
-        herramientas: "VS Code · Git",
-        estado: "En desarrollo",
-        url: "#"
+        imagen: "assets/img/Proyectos/Proyecto-2.png",
+        descripcion: "Máquina virtual creada en Linux Ubuntu preparada al 100% para programadores, con programas como VS Code, Git, Docker, Node.js, Pythin y muchos más, además de tener un entorno gráfico muy bonito y optimizado para programar",
+        tecnologias: "Linux Ubuntu · VS Code · Git · Docker · Node.js · Python",
+        herramientas: "VirtualBox",
+        estado: "Completada",
+        url: "#",
+        abrir: false
     },
     {
         numero: "Proyecto//003",
         titulo: "Web de Notas",
-        imagen: "assets/img/Proyectos/Proyecto-1.png",
+        imagen: "assets/img/Proyectos/Proyecto-3.png",
         descripcion: "Esta web está desarrollada con React, sirve para poder apuntar notas en las típicas sticky-notes, tiene varias funciones como cambiar de color las notas o poder desplazarlas según se quiera",
         tecnologias: "React · CSS · HTML · JavaScript",
         herramientas: "VS Code · Git · Figma",
         estado: "En desarrollo",
-        url: "#"
+        url: "#",
+        abrir: false
     },
     {
         numero: "Proyecto//004",
@@ -55,9 +58,9 @@ const datosProyectos = [
         tecnologias: "Fusion360 · Blender · OrcaSlicer · Anycubic",
         herramientas: "Impresora 3D Anycubic Kobra X",
         estado: "En desarrollo",
-        url: "#"
+        url: "#",
+        abrir: true
     }
-
 ];
 
 
@@ -76,6 +79,12 @@ proyectos.forEach((proyecto, index) => {
         tecnologias.textContent = datos.tecnologias;
         herramientas.textContent = datos.herramientas;
         estado.textContent = datos.estado;
+        if (datos.abrir) {
+        enlace.style.display = "inline-block";
+        enlace.href = datos.url;
+            } else {
+                enlace.style.display = "none";
+            }
         enlace.href = datos.url;
     });
 });

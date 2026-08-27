@@ -481,7 +481,7 @@ a{
 }
 .proyectos-container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1700px;
     margin: 0 auto;
 }
 .proyectos .section-title {
@@ -569,7 +569,7 @@ a{
 }
 .proyecto-photo img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: fill;
     display: block;
     transition: transform 0.2s ease, opacity 0.2s ease;
@@ -581,6 +581,7 @@ a{
     PROJECT INFO
 ========================= */
 .proyecto-info {
+    width: 100%;
     padding-left: 0;
     padding-top: 5px;
     transition: transform 0.2s ease, opacity 0.2s ease;
