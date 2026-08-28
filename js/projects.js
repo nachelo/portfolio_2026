@@ -32,7 +32,7 @@ const datosProyectos = [
         numero: "Proyecto//002",
         titulo: "Code Gold Machine",
         imagen: "assets/img/Proyectos/Proyecto-2.png",
-        descripcion: "Máquina virtual creada en Linux Ubuntu preparada al 100% para programadores, con programas como VS Code, Git, Docker, Node.js, Pythin y muchos más, además de tener un entorno gráfico muy bonito y optimizado para programar",
+        descripcion: "Máquina virtual creada en Linux Ubuntu preparada al 100% para programadores, con programas como VS Code, Git, Docker, Node.js, Python y muchos más, además de tener un entorno gráfico muy bonito y optimizado para programar",
         tecnologias: "Linux Ubuntu · VS Code · Git · Docker · Node.js · Python",
         herramientas: "VirtualBox",
         estado: "Completada",
@@ -58,9 +58,10 @@ const datosProyectos = [
         tecnologias: "Fusion360 · Blender · OrcaSlicer · Anycubic",
         herramientas: "Impresora 3D Anycubic Kobra X",
         estado: "En desarrollo",
-        url: "#",
+        url: "https://www.printables.com/@Naxelus_1874142",
         abrir: true
     }
+    
 ];
 
 

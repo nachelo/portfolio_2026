@@ -1,15 +1,533 @@
-@media (max-width: 768px) {
+/* =========================
+   LARGE DESKTOP
+========================= */
 
-    .site-header {
-        padding: 15px 20px;
+@media (min-width: 1921px) {
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-photo {
+        width: 480px;
     }
 
-    .main-navigation {
+    .about-info {
+        width: 720px;
+    }
+
+    .about-info h2 {
+        font-size: 3.2rem;
+    }
+
+    .about-info p {
+        font-size: 1.4rem;
+    }
+
+    .about-navigation {
+        font-size: 2rem;
+    }
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experiencia-container {
+    width: 90%;
+    max-width: 1800px;
+}
+
+.experiencia-item {
+    width: 34%;
+}
+
+.experiencia-card::before {
+    top: -30px;
+    left: 50px;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-bottom-width: 20px;
+}
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .proyectos-container {
+        width: 80%;
+        max-width: 1800px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contacto-container {
+        width: 80%;
+        max-width: 1800px;
+    }
+
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1400px) and (min-width: 1101px) {
+
+    /* ABOUT */
+
+    .about-photo {
+        width: 340px;
+        left: 12%;
+    }
+
+    .about-info {
+        width: 520px;
+        left: 38%;
+    }
+
+    .about-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-info p {
+        font-size: 1.1rem;
+    }
+
+    .about-navigation {
+        right: 3%;
+        font-size: 1.6rem;
+    }
+
+
+/* EXPERIENCE */
+
+.experiencia-container {
+    width: 90%;
+}
+
+.experiencia-timeline {
+    width: 100%;
+}
+
+.experiencia-item {
+    width: 42%;
+}
+
+.experiencia-card {
+    width: 100%;
+}
+
+.experiencia-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.experiencia-card p {
+    font-size: 0.95rem;
+}
+
+.experiencia-future span {
+    right: 25%;
+    font-size: 0.85rem;
+}
+
+
+    /* PROJECTS */
+
+    .proyectos-container {
+        width: 90%;
+    }
+
+    .proyectos-content {
+        gap: 30px;
+    }
+
+    .proyecto-details {
+        gap: 30px;
+    }
+
+    .proyecto-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .proyecto-info > p {
+        font-size: 1.1rem;
+    }
+
+
+    /* CONTACT */
+
+    .contacto-container {
+        width: 90%;
+    }
+
+    .contacto-grid {
+        gap: 20px;
+    }
+}
+
+/* =========================
+   MOBILE/TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    /* HEADER */
+
+    .site-header {
+        min-height: 70px;
+        padding: 12px 20px;
+    }
+
+    .site-brand {
+        align-items: flex-start;
+    }
+
+    .status {
+        font-size: 0.9rem;
+    }
+
+
+    /* GENERAL */
+
+    .section {
+        min-height: auto;
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .about-content {
+        min-height: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo {
+        position: relative;
+        width: min(80%, 350px);
+        left: auto;
+        top: auto;
+        transform: rotate(4deg);
+        margin-bottom: 60px;
+    }
+
+    .about-photo:hover {
+        transform: rotate(1deg) scale(1.02);
+    }
+
+    .photo-caption {
+        font-size: 3rem;
+    }
+
+    .about-info {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    .about-info::before {
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            92% 100%,
+            0 100%
+        );
+    }
+
+    .about-info h2 {
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    .about-info p {
+        margin-left: 10px;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .about-navigation {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-top: 60px;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experiencia {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .experiencia-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 35px;
+    }
+
+    .experiencia-line {
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: auto;
+        width: 5px;
+        height: auto;
+    }
+
+    .experiencia-item {
+        width: 100%;
+    }
+
+    .experiencia-point {
+        top: 0;
+        left: -25px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .experiencia-year {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        transform: none;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .experiencia-card {
+        margin-top: 10px;
+    }
+
+    .experiencia-card::before {
         display: none;
     }
 
+    .experiencia-future {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 70px;
+    }
+
+    .future-point {
+        left: -25px;
+        right: auto;
+        top: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    .future-lock {
+        left: -17px;
+        right: auto;
+        top: -28px;
+    }
+
+    .experiencia-future span {
+        position: relative;
+        top: 5px;
+        right: auto;
+        margin-left: 25px;
+        white-space: normal;
+        font-size: 1rem;
+    }
+
+
+    /* PROJECTS */
+
+    .proyectos {
+        overflow: visible;
+    }
+
+    .proyectos-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .proyectos-list {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--color-green);
+        padding-bottom: 20px;
+    }
+
+    .proyectos-item {
+        margin-bottom: 15px;
+    }
+
+    .proyecto-details {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .proyecto-left {
+        width: 100%;
+    }
+
+    .proyecto-photo {
+        width: 100%;
+    }
+
+    .proyecto-info {
+        width: 100%;
+    }
+
+    .proyecto-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .proyecto-info > p {
+        font-size: 1.1rem;
+    }
+
+    .proyecto-data {
+        gap: 15px;
+    }
+
+    .proyecto-link {
+        font-size: 1.3rem;
+    }
+
+
+    /* CONTACT */
+
+    .contacto-container {
+        width: 100%;
+    }
+
+    .contacto-container .section-title {
+        margin-bottom: 45px;
+    }
+
+    .contacto-bloque {
+        margin-bottom: 50px;
+    }
+
+    .contacto-bloque h2 {
+        font-size: 1.6rem;
+    }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contacto-card-header {
+        font-size: 1.5rem;
+    }
+
+    .contacto-card-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .contacto-card-content p {
+        font-size: 1.1rem;
+    }
+
+    .contacto-card-content span {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .site-header {
+        padding: 12px 15px;
+    }
+
+    .site-brand {
+        font-size: 0.9rem;
+    }
+
+    .status {
+        font-size: 0.75rem;
+    }
+
     .section {
-        padding: 60px 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-title {
+        font-size: 2.3rem;
+    }
+
+    .about-photo {
+        width: 90%;
+    }
+
+    .about-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-info p {
+        font-size: 1rem;
+    }
+
+    .about-navigation {
+        font-size: 1.2rem;
+    }
+
+    .experiencia-timeline {
+        padding-left: 30px;
+    }
+
+    .experiencia-card-content {
+        padding: 18px;
+    }
+
+    .experiencia-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .experiencia-card p {
+        font-size: 1rem;
+    }
+
+    .proyecto-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .proyecto-info > p {
+        font-size: 1rem;
     }
 
 }

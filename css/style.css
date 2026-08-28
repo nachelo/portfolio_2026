@@ -380,7 +380,7 @@ a{
     margin-top: 90px;
     width: 100%;
     border: 2px solid var(--color-green);
-    background-color: var(--color-background);
+    background-color: var(--color-dark);
     font-family: var(--font-terminal);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -653,7 +653,66 @@ a{
 /* =========================
     CONTACT
 ========================= */
-
+.contacto-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contacto-container .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contacto-bloque{
+    margin-bottom: 40px;
+}
+.contacto-bloque h2{
+    font-family: var(--font-terminal);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contacto-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.contacto-card{
+    border: 2px solid var(--color-green);
+    background-color: var(--color-dark);
+    font-family: var(--font-terminal);
+    color: var(--color-white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contacto-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 0 var(--color-green);
+}
+.contacto-card:hover span{
+    text-decoration: underline;
+}
+.contacto-card-header{
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--color-green);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.contacto-card-content{
+    padding: 12px;
+}
+.contacto-card-content h3{
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: var(--color-yellow);
+}
+.contacto-card-content p{
+    font-size: 1.4rem;
+    min-height: 35px;
+    margin-bottom: 10px;
+}
+.contacto-card-content span{
+    font-size: 1.5rem;
+    color: var(--color-cyan);
+    transition: 0.3s ease;
+}
 /* =========================
     COMPONENTS
 ========================= */
