@@ -477,6 +477,10 @@
         font-size: 0.9rem;
     }
 
+    .main-nav{
+        display: none;
+    }
+
     .status {
         font-size: 0.75rem;
     }
@@ -487,7 +491,7 @@
     }
 
     .section-title {
-        font-size: 2.3rem;
+        font-size: 2.7rem !important;
     }
 
     .about-photo {
